@@ -1,0 +1,666 @@
+﻿**********************
+Inicio de la transcripción de Windows PowerShell
+Hora de inicio: 20260825155428
+Nombre de usuario: DESKTOP-SVKTNJB\fborr
+Usuario RunAs: DESKTOP-SVKTNJB\fborr
+Nombre de la configuración: 
+Máquina: DESKTOP-SVKTNJB (Microsoft Windows NT 10.0.26200.0)
+Aplicación host: C:\WINDOWS\system32\WindowsPowerShell\v1.0\powershell.exe
+Id. de proceso: 4212
+PSVersion: 5.1.26100.9168
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.9168
+BuildVersion: 10.0.26100.9168
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+La transcripción ha comenzado. El archivo de salida es .\tareas\tarea1\tarea1.txt
+PS C:\Users\fborr\econ_520\tareas\tarea1> pwd
+
+Path
+----
+C:\Users\fborr\econ_520\tareas\tarea1
+
+
+PS C:\Users\fborr\econ_520\tareas\tarea1> cd /
+PS C:\> pwd
+
+Path
+----
+C:\
+
+
+PS C:\> cd home
+cd : No se encuentra la ruta de acceso 'C:\home' porque no existe.
+En línea: 1 Carácter: 1
++ cd home
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\home:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+cd : No se encuentra la ruta de acceso 'C:\home' porque no existe.
+En línea: 1 Carácter: 1
++ cd home
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\home:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\> cd ..
+PS C:\> cd
+PS C:\> pwd
+
+Path
+----
+C:\
+
+
+PS C:\> cd ../../etc
+cd : No se encuentra la ruta de acceso 'C:\etc' porque no existe.
+En línea: 1 Carácter: 1
++ cd ../../etc
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\etc:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+cd : No se encuentra la ruta de acceso 'C:\etc' porque no existe.
+En línea: 1 Carácter: 1
++ cd ../../etc
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\etc:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\> cd C:\Users\fborr\econ_520\
+PS C:\Users\fborr\econ_520> whoami
+
+PS C:\Users\fborr\econ_520> cd ~
+PS C:\Users\fborr> cd ~/escritorio
+cd : No se encuentra la ruta de acceso 'C:\Users\fborr\escritorio' porque no existe.
+En línea: 1 Carácter: 1
++ cd ~/escritorio
++ ~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\fborr\escritorio:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+cd : No se encuentra la ruta de acceso 'C:\Users\fborr\escritorio' porque no existe.
+En línea: 1 Carácter: 1
++ cd ~/escritorio
++ ~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\fborr\escritorio:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\fborr> cd ~/desktop
+cd : No se encuentra la ruta de acceso 'C:\Users\fborr\desktop' porque no existe.
+En línea: 1 Carácter: 1
++ cd ~/desktop
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\fborr\desktop:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+cd : No se encuentra la ruta de acceso 'C:\Users\fborr\desktop' porque no existe.
+En línea: 1 Carácter: 1
++ cd ~/desktop
++ ~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\fborr\desktop:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\fborr> cd .\econ_520\
+PS C:\Users\fborr\econ_520> mkdir tarea
+
+
+    Directorio: C:\Users\fborr\econ_520
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         25/8/2026     16:00                tarea
+
+
+PS C:\Users\fborr\econ_520> cd tarea
+PS C:\Users\fborr\econ_520\tarea> mkdir dir1, dir2, dir 3
+>> ErrorTerminación(mkdir): "No se encuentra ningún parámetro de posición que acepte el argumento '3'."
+mkdir : No se encuentra ningún parámetro de posición que acepte el argumento '3'.
+En línea: 1 Carácter: 1
++ mkdir dir1, dir2, dir 3
++ ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [mkdir], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,mkdir
+mkdir : No se encuentra ningún parámetro de posición que acepte el argumento '3'.
+En línea: 1 Carácter: 1
++ mkdir dir1, dir2, dir 3
++ ~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [mkdir], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,mkdir
+
+PS C:\Users\fborr\econ_520\tarea> mkdir dir1, dir2, dir3
+
+
+    Directorio: C:\Users\fborr\econ_520\tarea
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         25/8/2026     16:00                dir1
+d-----         25/8/2026     16:00                dir2
+d-----         25/8/2026     16:00                dir3
+
+
+PS C:\Users\fborr\econ_520\tarea> ls
+
+
+    Directorio: C:\Users\fborr\econ_520\tarea
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         25/8/2026     16:00                dir1
+d-----         25/8/2026     16:00                dir2
+d-----         25/8/2026     16:00                dir3
+
+
+PS C:\Users\fborr\econ_520\tarea> mkdir -p dir4/dir5/dir6
+
+
+    Directorio: C:\Users\fborr\econ_520\tarea\dir4\dir5
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         25/8/2026     16:01                dir6
+
+
+PS C:\Users\fborr\econ_520\tarea> ls
+
+
+    Directorio: C:\Users\fborr\econ_520\tarea
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         25/8/2026     16:00                dir1
+d-----         25/8/2026     16:00                dir2
+d-----         25/8/2026     16:00                dir3
+d-----         25/8/2026     16:01                dir4
+
+
+PS C:\Users\fborr\econ_520\tarea> cd dir5
+cd : No se encuentra la ruta de acceso 'C:\Users\fborr\econ_520\tarea\dir5' porque no existe.
+En línea: 1 Carácter: 1
++ cd dir5
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\fborr\econ_520\tarea\dir5:String) [Set-Location], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+cd : No se encuentra la ruta de acceso 'C:\Users\fborr\econ_520\tarea\dir5' porque no existe.
+En línea: 1 Carácter: 1
++ cd dir5
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\fborr\econ_520\tarea\dir5:String) [Set-Location], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\fborr\econ_520\tarea> mkdir "folder 1"
+
+
+    Directorio: C:\Users\fborr\econ_520\tarea
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         25/8/2026     16:03                folder 1
+
+
+PS C:\Users\fborr\econ_520\tarea> mkdir "folder 21"
+
+
+    Directorio: C:\Users\fborr\econ_520\tarea
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         25/8/2026     16:04                folder 21
+
+
+PS C:\Users\fborr\econ_520\tarea> mkdir "folder 3"
+
+
+    Directorio: C:\Users\fborr\econ_520\tarea
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         25/8/2026     16:04                folder 3
+
+
+PS C:\Users\fborr\econ_520\tarea> mkdir "folder 4"
+
+
+    Directorio: C:\Users\fborr\econ_520\tarea
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         25/8/2026     16:04                folder 4
+
+
+PS C:\Users\fborr\econ_520\tarea> ls
+
+
+    Directorio: C:\Users\fborr\econ_520\tarea
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         25/8/2026     16:00                dir1
+d-----         25/8/2026     16:00                dir2
+d-----         25/8/2026     16:00                dir3
+d-----         25/8/2026     16:01                dir4
+d-----         25/8/2026     16:03                folder 1
+d-----         25/8/2026     16:04                folder 21
+d-----         25/8/2026     16:04                folder 3
+d-----         25/8/2026     16:04                folder 4
+
+
+PS C:\Users\fborr\econ_520\tarea> ls > output.txt
+PS C:\Users\fborr\econ_520\tarea> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="dir1"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="dir2"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="dir3"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="dir4"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="folder 1"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="folder 21"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="folder 3"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="folder 4"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="output.txt"
+PS C:\Users\fborr\econ_520\tarea> cat .\output.txt
+
+
+    Directorio: C:\Users\fborr\econ_520\tarea
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         25/8/2026     16:00                dir1
+d-----         25/8/2026     16:00                dir2
+d-----         25/8/2026     16:00                dir3
+d-----         25/8/2026     16:01                dir4
+d-----         25/8/2026     16:03                folder 1
+d-----         25/8/2026     16:04                folder 21
+d-----         25/8/2026     16:04                folder 3
+d-----         25/8/2026     16:04                folder 4
+-a----         25/8/2026     16:05              0 output.txt
+
+
+PS C:\Users\fborr\econ_520\tarea> echo "probando nada más"
+probando nada más
+PS C:\Users\fborr\econ_520\tarea> echo "probando una vezs" > prueba1.txt
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="probando una vezs"
+PS C:\Users\fborr\econ_520\tarea> echo "probando por segunda vezs" > prueba2.txt , "probando por tercera vez" > prueba3.txt
+En línea: 1 Carácter: 48
++ echo "probando por segunda vezs" > prueba2.txt , "probando por tercer ...
++                                                ~
+Falta un argumento en la lista de parámetros.
+
+En línea: 1 Carácter: 77
++ ... egunda vezs" > prueba2.txt , "probando por tercera vez" > prueba3.txt
++                                                             ~~~~~~~~~~~~~
+El flujo de salida de este comando ya está redirigido.
+En línea: 1 Carácter: 48
++ echo "probando por segunda vezs" > prueba2.txt , "probando por tercer ...
++                                                ~
+Falta un argumento en la lista de parámetros.
+
+En línea: 1 Carácter: 77
++ ... egunda vezs" > prueba2.txt , "probando por tercera vez" > prueba3.txt
++                                                             ~~~~~~~~~~~~~
+El flujo de salida de este comando ya está redirigido.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingArgument
+
+PS C:\Users\fborr\econ_520\tarea> echo "probando por segunda vezs" > prueba2.txt, "probando por tercera vez" > prueba3.txt
+En línea: 1 Carácter: 47
++ echo "probando por segunda vezs" > prueba2.txt, "probando por tercera ...
++                                               ~
+Falta un argumento en la lista de parámetros.
+
+En línea: 1 Carácter: 76
++ ... segunda vezs" > prueba2.txt, "probando por tercera vez" > prueba3.txt
++                                                             ~~~~~~~~~~~~~
+El flujo de salida de este comando ya está redirigido.
+En línea: 1 Carácter: 47
++ echo "probando por segunda vezs" > prueba2.txt, "probando por tercera ...
++                                               ~
+Falta un argumento en la lista de parámetros.
+
+En línea: 1 Carácter: 76
++ ... segunda vezs" > prueba2.txt, "probando por tercera vez" > prueba3.txt
++                                                             ~~~~~~~~~~~~~
+El flujo de salida de este comando ya está redirigido.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingArgument
+
+PS C:\Users\fborr\econ_520\tarea> echo "probando por segunda vezs" > prueba2.txt
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="probando por segunda vezs"
+PS C:\Users\fborr\econ_520\tarea> echo "probando por tercera vezs" > prueba3.txt
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="probando por tercera vezs"
+PS C:\Users\fborr\econ_520\tarea> ls
+
+
+    Directorio: C:\Users\fborr\econ_520\tarea
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----         25/8/2026     16:00                dir1
+d-----         25/8/2026     16:00                dir2
+d-----         25/8/2026     16:00                dir3
+d-----         25/8/2026     16:01                dir4
+d-----         25/8/2026     16:03                folder 1
+d-----         25/8/2026     16:04                folder 21
+d-----         25/8/2026     16:04                folder 3
+d-----         25/8/2026     16:04                folder 4
+-a----         25/8/2026     16:05           3002 output.txt
+-a----         25/8/2026     16:06             40 prueba1.txt
+-a----         25/8/2026     16:08             56 prueba2.txt
+-a----         25/8/2026     16:08             56 prueba3.txt
+
+
+PS C:\Users\fborr\econ_520\tarea> cat .\prueba1.txt, .\prueba2.txt, prueba3.txt
+probando una vezs
+probando por segunda vezs
+probando por tercera vezs
+PS C:\Users\fborr\econ_520\tarea> cat prueba?.txt
+probando una vezs
+probando por segunda vezs
+probando por tercera vezs
+PS C:\Users\fborr\econ_520\tarea> cat p* > total.txt
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="probando una vezs"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="probando por segunda vezs"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="probando por tercera vezs"
+PS C:\Users\fborr\econ_520\tarea> cat .\total.txt
+probando una vezs
+probando por segunda vezs
+probando por tercera vezs
+PS C:\Users\fborr\econ_520\tarea> echo "fin de las pruebas" >> .\total.txt
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="fin de las pruebas"
+PS C:\Users\fborr\econ_520\tarea> cat .\total.txt
+probando una vezs
+probando por segunda vezs
+probando por tercera vezs
+fin de las pruebas
+PS C:\Users\fborr\econ_520\tarea> less .\total.txt
+
+PS C:\Users\fborr\econ_520\tarea> mv .\total.txt dir1
+PS C:\Users\fborr\econ_520\tarea> ls dir1
+
+
+    Directorio: C:\Users\fborr\econ_520\tarea\dir1
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         25/8/2026     16:11            188 total.txt
+
+
+PS C:\Users\fborr\econ_520\tarea> mv total.txt prueba_* dir3 dir2
+>> ErrorTerminación(Move-Item): "No se encuentra ningún parámetro de posición que acepte el argumento 'dir3'."
+Move-Item : No se encuentra ningún parámetro de posición que acepte el argumento 'dir3'.
+En línea: 1 Carácter: 1
++ mv total.txt prueba_* dir3 dir2
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Move-Item], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+Move-Item : No se encuentra ningún parámetro de posición que acepte el argumento 'dir3'.
+En línea: 1 Carácter: 1
++ mv total.txt prueba_* dir3 dir2
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Move-Item], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+
+PS C:\Users\fborr\econ_520\tarea> ls
+
+
+    Directorio: C:\Users\fborr\econ_520\tarea
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+da----         25/8/2026     16:12                dir1
+d-----         25/8/2026     16:00                dir2
+d-----         25/8/2026     16:00                dir3
+d-----         25/8/2026     16:01                dir4
+d-----         25/8/2026     16:03                folder 1
+d-----         25/8/2026     16:04                folder 21
+d-----         25/8/2026     16:04                folder 3
+d-----         25/8/2026     16:04                folder 4
+-a----         25/8/2026     16:05           3002 output.txt
+-a----         25/8/2026     16:06             40 prueba1.txt
+-a----         25/8/2026     16:08             56 prueba2.txt
+-a----         25/8/2026     16:08             56 prueba3.txt
+
+
+PS C:\Users\fborr\econ_520\tarea> mv total.txt prueba_*3 dir2
+>> ErrorTerminación(Move-Item): "No se encuentra ningún parámetro de posición que acepte el argumento 'dir2'."
+Move-Item : No se encuentra ningún parámetro de posición que acepte el argumento 'dir2'.
+En línea: 1 Carácter: 1
++ mv total.txt prueba_*3 dir2
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Move-Item], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+Move-Item : No se encuentra ningún parámetro de posición que acepte el argumento 'dir2'.
+En línea: 1 Carácter: 1
++ mv total.txt prueba_*3 dir2
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Move-Item], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+
+PS C:\Users\fborr\econ_520\tarea> mv total.txt, prueba_* dir2
+mv : No se encuentra la ruta de acceso 'C:\Users\fborr\econ_520\tarea\total.txt' porque no existe.
+En línea: 1 Carácter: 1
++ mv total.txt, prueba_* dir2
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\fborr\econ_520\tarea\total.txt:String) [Move-Item], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+mv : No se encuentra la ruta de acceso 'C:\Users\fborr\econ_520\tarea\total.txt' porque no existe.
+En línea: 1 Carácter: 1
++ mv total.txt, prueba_* dir2
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\fborr\econ_520\tarea\total.txt:String) [Move-Item], ItemNotFoundExceptio
+   n
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+
+PS C:\Users\fborr\econ_520\tarea> mv total.txt , prueba_* dir2
+mv : No se encuentra la ruta de acceso 'C:\Users\fborr\econ_520\tarea\total.txt' porque no existe.
+En línea: 1 Carácter: 1
++ mv total.txt , prueba_* dir2
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\fborr\econ_520\tarea\total.txt:String) [Move-Item], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+mv : No se encuentra la ruta de acceso 'C:\Users\fborr\econ_520\tarea\total.txt' porque no existe.
+En línea: 1 Carácter: 1
++ mv total.txt , prueba_* dir2
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\fborr\econ_520\tarea\total.txt:String) [Move-Item], ItemNotFoundExceptio
+   n
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+
+PS C:\Users\fborr\econ_520\tarea> mv prueba_* dir2
+PS C:\Users\fborr\econ_520\tarea> cd dir1
+PS C:\Users\fborr\econ_520\tarea\dir1> mv .\total.txt tarea
+PS C:\Users\fborr\econ_520\tarea\dir1> cd ..
+PS C:\Users\fborr\econ_520\tarea> ls
+
+
+    Directorio: C:\Users\fborr\econ_520\tarea
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+da----         25/8/2026     16:18                dir1
+d-----         25/8/2026     16:00                dir2
+d-----         25/8/2026     16:00                dir3
+d-----         25/8/2026     16:01                dir4
+d-----         25/8/2026     16:03                folder 1
+d-----         25/8/2026     16:04                folder 21
+d-----         25/8/2026     16:04                folder 3
+d-----         25/8/2026     16:04                folder 4
+-a----         25/8/2026     16:05           3002 output.txt
+-a----         25/8/2026     16:06             40 prueba1.txt
+-a----         25/8/2026     16:08             56 prueba2.txt
+-a----         25/8/2026     16:08             56 prueba3.txt
+
+
+PS C:\Users\fborr\econ_520\tarea> mv tarea total.txt
+mv : No se encuentra la ruta de acceso 'C:\Users\fborr\econ_520\tarea\tarea' porque no existe.
+En línea: 1 Carácter: 1
++ mv tarea total.txt
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\fborr\econ_520\tarea\tarea:String) [Move-Item], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+mv : No se encuentra la ruta de acceso 'C:\Users\fborr\econ_520\tarea\tarea' porque no existe.
+En línea: 1 Carácter: 1
++ mv tarea total.txt
++ ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\fborr\econ_520\tarea\tarea:String) [Move-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+
+PS C:\Users\fborr\econ_520\tarea> mv tarea tarea
+mv : No se encuentra la ruta de acceso 'C:\Users\fborr\econ_520\tarea\tarea' porque no existe.
+En línea: 1 Carácter: 1
++ mv tarea tarea
++ ~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\fborr\econ_520\tarea\tarea:String) [Move-Item], 
+ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+mv : No se encuentra la ruta de acceso 'C:\Users\fborr\econ_520\tarea\tarea' porque no existe.
+En línea: 1 Carácter: 1
++ mv tarea tarea
++ ~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\fborr\econ_520\tarea\tarea:String) [Move-Item], ItemNotFoundException
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.MoveItemCommand
+
+PS C:\Users\fborr\econ_520\tarea> cp tarea copia
+PS C:\Users\fborr\econ_520\tarea> mv copia copia.txt
+PS C:\Users\fborr\econ_520\tarea> mv tarea tarea.txt
+PS C:\Users\fborr\econ_520\tarea> rm .\tarea.txt, .\copia.txt
+PS C:\Users\fborr\econ_520\tarea> rm folder *
+>> ErrorTerminación(Remove-Item): "No se encuentra ningún parámetro de posición que acepte el argumento '*'."
+Remove-Item : No se encuentra ningún parámetro de posición que acepte el argumento '*'.
+En línea: 1 Carácter: 1
++ rm folder *
++ ~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Remove-Item], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+Remove-Item : No se encuentra ningún parámetro de posición que acepte el argumento '*'.
+En línea: 1 Carácter: 1
++ rm folder *
++ ~~~~~~~~~~~
+    + CategoryInfo          : InvalidArgument: (:) [Remove-Item], ParameterBindingException
+    + FullyQualifiedErrorId : PositionalParameterNotFound,Microsoft.PowerShell.Commands.RemoveItemCommand
+
+PS C:\Users\fborr\econ_520\tarea> rm folder**
+PS C:\Users\fborr\econ_520\tarea> ls
+
+
+    Directorio: C:\Users\fborr\econ_520\tarea
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+da----         25/8/2026     16:20                dir1
+d-----         25/8/2026     16:00                dir2
+d-----         25/8/2026     16:00                dir3
+d-----         25/8/2026     16:01                dir4
+-a----         25/8/2026     16:05           3002 output.txt
+-a----         25/8/2026     16:06             40 prueba1.txt
+-a----         25/8/2026     16:08             56 prueba2.txt
+-a----         25/8/2026     16:08             56 prueba3.txt
+
+
+PS C:\Users\fborr\econ_520\tarea> cat prueba* > total.txt
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="probando una vezs"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="probando por segunda vezs"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="probando por tercera vezs"
+PS C:\Users\fborr\econ_520\tarea> wc -l .\total.txt
+
+PS C:\Users\fborr\econ_520\tarea> wc -l archivos.txt
+
+PS C:\Users\fborr\econ_520\tarea> ls ~ > file_list.txt
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Contacts"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Curso_SQL"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Documents"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Downloads"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="econ_520"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Favorites"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Links"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Music"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="OneDrive"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Saved Games"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Searches"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor="Videos"
+>> EnlaceDeParámetros(Out-File): nombre="InputObject"; valor=".gitconfig"
+PS C:\Users\fborr\econ_520\tarea> wc -l .\file_list.txt
+
+PS C:\Users\fborr\econ_520\tarea> rm .\file_list.txt
+PS C:\Users\fborr\econ_520\tarea> ls ~ | wc -l
+
+PS C:\Users\fborr\econ_520\tarea> cat total.txt | uniq | wc -l
+
+PS C:\Users\fborr\econ_520\tarea> sort .\total.txt | less
+(END)
+PS C:\Users\fborr\econ_520\tarea> ErrorTerminación(): "Se ha detenido la canalización."
+>> ErrorTerminación(): "Se ha detenido la canalización."
+PS C:\Users\fborr\econ_520\tarea> sort total.txt | uniq | wl - l
+wl : El término 'wl' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable. 
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e 
+inténtelo de nuevo.
+En línea: 1 Carácter: 25
++ sort total.txt | uniq | wl - l
++                         ~~
+    + CategoryInfo          : ObjectNotFound: (wl:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+wl : El término 'wl' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable. Compruebe si
+escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e inténtelo de nuevo.
+En línea: 1 Carácter: 25
++ sort total.txt | uniq | wl - l
++                         ~~
+    + CategoryInfo          : ObjectNotFound: (wl:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\fborr\econ_520\tarea> sort total.txt | uniq | wl - l
+wl : El término 'wl' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable. 
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e 
+inténtelo de nuevo.
+En línea: 1 Carácter: 25
++ sort total.txt | uniq | wl - l
++                         ~~
+    + CategoryInfo          : ObjectNotFound: (wl:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+wl : El término 'wl' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable. Compruebe si
+escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e inténtelo de nuevo.
+En línea: 1 Carácter: 25
++ sort total.txt | uniq | wl - l
++                         ~~
+    + CategoryInfo          : ObjectNotFound: (wl:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\fborr\econ_520\tarea> sort total.txt | uniq | wl -l
+wl : El término 'wl' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable. 
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e 
+inténtelo de nuevo.
+En línea: 1 Carácter: 25
++ sort total.txt | uniq | wl -l
++                         ~~
+    + CategoryInfo          : ObjectNotFound: (wl:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+wl : El término 'wl' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable. Compruebe si
+escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e inténtelo de nuevo.
+En línea: 1 Carácter: 25
++ sort total.txt | uniq | wl -l
++                         ~~
+    + CategoryInfo          : ObjectNotFound: (wl:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\fborr\econ_520\tarea> Stop-Transcript
+**********************
+Fin de la transcripción de Windows PowerShell
+Hora de finalización: 20260825163107
+**********************
