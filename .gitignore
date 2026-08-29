@@ -1,3 +1,5 @@
 .Rproj.user
 repos_interesantes/
 *.Rproj
+.RData/
+.Rhistory/ 
