@@ -3,3 +3,4 @@ repos_interesantes/
 *.Rproj
 .RData/
 .Rhistory/ 
+data/
